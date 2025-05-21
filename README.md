@@ -33,7 +33,7 @@ You can tweak highlight styles via `settings.json`:
 "vscode-line-highlighter.borderColor": "rgba(100, 245, 255, 0.85)",
 "vscode-line-highlighter.borderWidth": "0 0 0 3px",
 "vscode-line-highlighter.isWholeLine": true
-"vscode-line-highlighter.toggleHighlight": "Toggle line highlighting on/off
+"vscode-line-highlighter.toggleHighlight": "Toggle line highlighting on/off"
 ```
 
 ## Status Bar Button
