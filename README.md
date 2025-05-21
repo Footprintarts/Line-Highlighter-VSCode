@@ -53,11 +53,9 @@ Shows current status ✅ / ❌
 
 Lets you toggle highlighting instantly
 
-![Usage Example](assets/preview-2.gif)
-
 ## 🚀 Demo
 
-(Tip: You can generate this using ScreenToGif or VS Code recorder)
+![Usage Example](assets/preview-3.gif)
 
 ## 🖌️ Customization Tips
 
