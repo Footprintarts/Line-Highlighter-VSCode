@@ -1,13 +1,27 @@
 {
-  "name": "vscodelinehighlighter",
-  "displayName": "VSCodeLineHighlighter",
-  "description": "Highlights the current line in VSCode.",
-  "version": "0.0.1",
+  "name": "linehighlighter",
+  "displayName": "Line Highlighter",
+  "description": "Beautifully highlights the current active line in VSCode with customizable styles. Perfect for focus and clarity.",
+  "version": "1.0.0",
+  "publisher": "Charles Mallya",
+  "author": {
+    "name": "Charles Mallya",
+    "email": "mallyac17@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Footprintarts/Line-Highlighter-VSCode.git"
+  },
   "engines": {
     "vscode": "^1.100.0"
   },
+  "icon": "assets/icon.png",
   "categories": [
-    "Other"
+    "Other",
+    "Education",
+    "Visualization",
+    "Productivity",
+    "Themes"
   ],
   "activationEvents": [
     "*"
@@ -15,10 +29,6 @@
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
-      {
-        "command": "vscode-line-highlighter.helloWorld",
-        "title": "Hello World"
-      },
       {
         "command": "vscode-line-highlighter.toggleHighlight",
         "title": "Line Highlighter: Toggle Highlight"
