@@ -1,0 +1,63 @@
+{
+  "name": "vscodelinehighlighter",
+  "displayName": "VSCodeLineHighlighter",
+  "description": "Highlights the current line in VSCode.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "vscode-line-highlighter.helloWorld",
+        "title": "Hello World"
+      },
+      {
+        "command": "vscode-line-highlighter.toggleHighlight",
+        "title": "Line Highlighter: Toggle Highlight"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "Line Highlighter Settings",
+      "properties": {
+        "vscodeLineHighlighter.color": {
+          "type": "string",
+          "default": "rgba(100, 219, 255, 0.07)",
+          "description": "Background color for the current line highlight"
+        },
+        "vscodeLineHighlighter.borderColor": {
+          "type": "string",
+          "default": "rgba(100, 245, 255, 0.85)",
+          "description": "Left border color for the current line highlight"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -w -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.100.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.31.1",
+    "@typescript-eslint/parser": "^8.31.1",
+    "eslint": "^9.25.1",
+    "typescript": "^5.8.3",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
